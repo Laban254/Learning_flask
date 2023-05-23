@@ -1,0 +1,25 @@
+{%extends "public/templates/public_template.html" %} {% block title%} Profile
+{%endblock%} {%block main%}
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1>My Profile </h1>
+      <hr>
+      <div class="card">
+        <div class="card-body">
+          {% if user%}
+          <h3>{{username}}  {{user['fname']}}</h>
+          {% else%}
+            <h4>user not  </h4>
+          {% endif%}
+          
+        </div>
+      </div>
+      
+      <hr>
+
+      
+    </div>
+  </div>
+</div>
+{%endblock%}
